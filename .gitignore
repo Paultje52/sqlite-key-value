@@ -1,3 +1,7 @@
+# Database
+database.sqlite
+database.json
+
 # Logs
 logs
 *.log

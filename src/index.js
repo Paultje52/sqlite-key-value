@@ -1,5 +1,5 @@
 module.exports = class DataBase {
-  constructor({development = false, cwd = __dirname, name ="database", inMemory: false} = {development: false, cwd: __dirname, name: "database", inMemory: false}) {
+  constructor({development = false, cwd = process.cwd(), name = "database", inMemory = false} = {}) {
     if (development) {
       this.database = new (require("json-config-store"))({
         cwd: cwd,
